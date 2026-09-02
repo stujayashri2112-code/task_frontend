@@ -696,14 +696,62 @@
 // }
 
 // function isEven(number) {
-//     // if(number % 2 === 0) {
-//     //      return true;
-//     // } else {
-//     //     return false;
-//     // }
+//     if(number % 2 === 0) {
+//          return true;
+//     } else {
+//         return false;
+//     }
 
-//     return number % 2 === 0 ? true : false;
+//     // return number % 2 === 0 ? true : false;
 // }
+
+// let result = isEven(6);
+
+// console.log(result);
+
+
+//odd number check
+
+// function isodd(number) {
+
+//      return number % 2 !== 0 ? true : false;
+// }
+
+// let result = isodd(6);
+
+// console.log(result);
+
+ //check prime number
+
+// function isPrime(number) {
+//     if (number < 2) {
+//         return false;
+//     }
+
+//     for (let i = 2; i < number; i++) {
+//         if (number % i === 0) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// console.log(isPrime(7));   // true
+// console.log(isPrime(10));  // false
+// console.log(isPrime(33));  // false
+
+
+//create a function to extract the username from the email address
+
+// function getUsername(email) {
+//     return email.split("@")[0];
+// }
+
+// console.log(getUsername("jayashri@gmail.com"));
+
+
+
 
 // function isValidEmail(email) {
 //     if(email.includes("@")) {
@@ -905,4 +953,286 @@
 // }
 
 
+//----------------------------------commit-19--------------------------------------
 
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+
+
+// numbers.forEach(double);
+// numbers.forEach(square);
+// numbers.forEach(display);
+
+                
+// function double(element, index, array) {
+//    array[index] = element * 2;
+// }
+
+// function square(element, index, array) {
+//     array[index] = Math.pow(element, 2)
+// }
+
+// function display(element) {
+//   console.log(element);
+// }
+
+//                 0        1         2         3
+// let fruits = ["apple", "orange", "banana", "pineapple"];
+
+
+// function upperCase(element, index, array) {
+//    array[index] = element.toUpperCase();
+// }
+
+// function capitilize(element, index, array) {
+//     array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+// }
+
+
+// // fruits.forEach(upperCase);
+// fruits.forEach(capitilize);
+// fruits.forEach(display);
+
+// function display(element) {
+//   console.log(element);
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+// console.log(numbers);
+
+// //               [1, 4, 9, 16, 25, 36]
+// const squares = numbers.map(square);
+
+// function square(element) {
+//     return Math.pow(element, 2);
+// }
+
+
+// const students = ["siva", "ganesh", "aslam"];
+
+// const upperResult = students.map(upperCase);
+
+// console.log(upperResult);
+
+
+// function upperCase(students) {
+//     return students.toUpperCase();
+// }
+
+
+// console.log(squares);
+
+
+// const dates = ["2016-1-10", "2025-2-20", "2026-3-30"];
+
+// dates = "2202-4-30";
+// console.log(dates.split("-"));
+
+
+// const formatedDates = dates.map(formatDates);
+
+// console.log(formatedDates);
+
+
+// function formatDates(element) {
+//     const parts = element.split("-");
+//     return `${parts[2]}/${parts[1]}/${parts[0]}`;
+    
+// }
+
+// formatDates();
+
+
+
+
+
+
+
+// for each triple the value.
+
+// let number=[1,2,3,4,5,6]
+
+// number.forEach(triple);
+// number.forEach(display);
+
+// function triple(element,index,array){
+
+//   array[index]=element+element+element;
+
+// }
+
+// function display(element){
+//   console.log(element)
+// }
+
+
+
+
+// }
+
+// square value .
+
+// const numbers=[1,2,3,4,5,6];
+
+// function square(element){
+//   return Math.pow(element,2);
+// }
+
+// console.log(numbers.map(square));
+
+
+// cubic value .
+
+// const numbers=[1,2,3,4,5,6];
+
+// function square(element){
+//   return Math.pow(element,3);
+// }
+
+// console.log(numbers.map(square));
+
+// uperCase to lowerCase
+
+// const names=['NAVEEN','JAYASHRI','SHYLA','MARIYA','SIVA'];
+
+// function uppertolower(elements){
+//   return elements.toLowerCase()
+// }
+
+// console.log(names.map(uppertolower));
+
+
+
+// first letter lower case
+
+// const names=['NAVEEN','JAYASHRI','SHYLA','MARIYA','SIVA'];
+
+// function firsttolower(element){
+//   return element[0].toLowerCase() + element.slice(1)
+// }
+
+// let result = names.map(firsttolower);
+
+// console.log(result);
+
+
+// function displaywebpage(result){
+//   document.getElementById("array").textContent=result
+// }
+
+// displaywebpage(result)
+
+
+
+
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+
+// let evenNumbers = numbers.filter(isEven);
+
+// console.log(evenNumbers);
+
+// function isEven(element) {
+//     return element % 2 === 0;
+// }
+
+
+// const ages = [10, 16, 17, 18, 20, 70, 60];
+
+// const adults = ages.filter(isAdult)
+
+// console.log(adults);
+
+// function isAdult(element) {
+//     return element >= 18;
+// }
+
+// const words = ["apple", "orange", "banana", "kiwi", "pomegranate", "coconut", "pineapplle"];
+
+// const shortWords = words.filter(getShortWords);
+
+// console.log(shortWords);
+
+// function getShortWords(element) {
+//     return element.length <= 6;
+// }
+
+
+// const prices = [200, 10, 80, 1000, 400];
+
+
+// const total = prices.reduce(sum);
+
+// console.log(`the total ₹${total.toFixed(2)}`);
+
+// //             1690        
+// function sum(previous, element) {
+//     return previous + element;
+// }
+
+
+// const grades = [75, 50, 90, 60, 65, 95];
+
+// const maximum = grades.reduce(getMax);
+
+// console.log(maximum);
+
+// function getMax(accum, element) {
+//     return Math.max(accum, element);
+// }
+
+
+
+// odd number
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+
+// let oddNumbers = numbers.filter(isodd);
+
+// console.log(oddNumbers);
+
+// function isodd(element) {
+//     return element % 2 !== 0;
+// }
+
+
+// to find the child 
+
+// const ages = [10, 16, 17, 18, 20, 70, 60];
+
+// const child = ages.filter(isChild);
+
+// console.log(child);
+
+// function isChild(element) {
+//     return element < 18;
+// }
+
+//to find the longword length
+
+
+// const words = ["apple", "orange", "banana", "kiwi", "pomegranate", "coconut", "pineapplle"];
+
+// const longWords = words.filter(getLongWords);
+
+// console.log(longWords);
+
+// function getLongWords(element) {
+//     return element.length > 6;
+// }
+
+
+
+// to find the minimum value in the array
+
+// const grades = [75, 50, 90, 60, 65, 95];
+
+// const minimum = grades.reduce(getMin);
+
+// console.log(minimum);
+
+// function getMin(accum, element) {
+//     return Math.min(accum, element);
+// }
