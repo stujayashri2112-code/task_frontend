@@ -1085,11 +1085,11 @@
 
 // const numbers=[1,2,3,4,5,6];
 
-// function square(element){
+// function cubic(element){
 //   return Math.pow(element,3);
 // }
 
-// console.log(numbers.map(square));
+// console.log(numbers.map(cubic));
 
 // uperCase to lowerCase
 
@@ -1170,7 +1170,7 @@
 // function sum(previous, element) {
 //     return previous + element;
 // }
-
+ 
 
 // const grades = [75, 50, 90, 60, 65, 95];
 
@@ -1202,7 +1202,7 @@
 
 // const ages = [10, 16, 17, 18, 20, 70, 60];
 
-// const child = ages.filter(isChild);
+// const child = ages.filter (isChild);
 
 // console.log(child);
 
@@ -1236,3 +1236,333 @@
 // function getMin(accum, element) {
 //     return Math.min(accum, element);
 // }
+
+
+            //Task
+
+
+// odd number using fun expresssion
+// const  odd = function (numbers) {
+//   return numbers.filter(function(element) {
+//     return element % 2 === 1;
+//   });
+// };
+
+//  console.log(odd([1,2,3,4,5,6,7,8,9]));
+
+
+
+
+
+
+// cubic fun using fun expresssion
+// const numbers = [1, 2, 3, 4, 5];
+//  const cubic = function (element){
+//      return Math.pow(element,3);
+//  }
+
+//  console.log(numbers.map(cubic));
+
+
+// odd number using arrow function and sepate  timeout
+
+// const odd = (numbers) => numbers.filter((element) => element % 2 === 1);
+
+// console.log(odd([1, 2, 3, 4, 5, 6, 7, 9]));
+
+// setTimeout(odd, 2000, [1, 2, 3, 4, 5, 6, 7, 9]);
+
+// cubic fun using arrow function  and seprate timeout
+
+// const cubic = (element) => Math.pow(element, 3);
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.map(cubic));
+
+//---------------------------------------commit-20---------------------------------
+
+
+
+
+// function declaration 
+
+// function hello() // signature part
+// {
+//     console.log("Hello siva"); // implementation part
+// }
+
+// const hello = function() {
+//     console.log("Hello siva");
+// }
+
+// hello();
+
+// setTimeout(hello, 3000);
+
+// setTimeout(function() {
+//      console.log("Hello siva");
+// }, 3000);
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+
+// const squares = numbers.map(function(element){
+//     return Math.pow(element, 2);
+// });
+
+// const evenNums = numbers.filter(function(element){
+//     return element % 2 === 0;
+// });
+
+// console.log(squares);
+// console.log(evenNums);
+
+
+// const total = numbers.reduce(function(accum, element) {
+//     return accum + element;
+// });
+// console.log(total);
+
+// function square(element) {
+//     return Math.pow(element, 2);
+// }
+
+// function hello() {
+//     console.log("hello siva");
+// }
+
+// hello();
+
+
+// const hello = function() {
+// console.log("hello siva");
+// }
+
+// const hello = (name) => { console.log(`hello ${name}`)
+//                         console.log(`you are ${22} years old`)};
+// hello("siva", 22);
+
+
+// setTimeout(function(){
+//      console.log("hello");
+// }, 3000);
+
+// function hello() {
+//     console.log("hello");
+// }
+
+
+// setTimeout(() => console.log("hello"), 3000);
+
+
+// const numbers =  [1, 2, 3, 4, 5, 6, 7];
+
+// const squares = numbers.map((element) => Math.pow(element, 2));
+
+// const evenNums = numbers.filter((element) => element % 2 === 0);
+
+// const total = numbers.reduce((accum, element) => accum + element);
+
+// console.log(squares);
+// console.log(evenNums);
+// console.log(total);
+
+        // objects
+
+// const person1 = {
+//     firstName: "siva",
+//     lastName: "kumar",
+//     age: 22,
+//     isEmpolyed: true,
+
+//     sayHello: function(){console.log("hai i am siva");},
+//     eat: function(){console.log("i ma eating briyani")},
+
+// }
+
+//  const person2 = {
+//     firstName: "naveen",
+//     lastName: "raj",
+//     age: 21,
+//     isEmpolyed: false,
+
+//     sayHello: () => console.log("I am naveen"),
+//     eat: function(){console.log("i ma eating fried rice")},
+
+// }
+
+// person1.sayHello();
+// person1.eat();
+
+// person2.sayHello();
+// person2.eat();
+
+// console.log(person1.firstName);
+// console.log(person1.lastName);
+// console.log(person1.age);
+// console.log(person1.isEmpolyed);
+// console.log(person1.isEmpolyed);
+
+// console.log(person2.firstName);
+// console.log(person2.lastName);
+// console.log(person2.age);
+// console.log(person2.isEmpolyed);
+
+
+// const person1 = {
+//     name: "siva",
+//     favFood: "curd rice",
+
+//     sayHello: function(){console.log(`hello i am ${this.name}`)},
+//     eat: function(){console.log(`${this.name} is eating ${this.favFood}`)}
+// }
+// const person2 = {
+//     name: "naveen",
+//     favFood: "sambar rice",
+
+//     sayHello: function(){console.log(`hello i am ${this.name}`)},
+//     eat: function(){console.log(`${this.name} is eating ${this.favFood}`)}
+// }
+
+// person1.sayHello();
+// person1.eat();
+// person2.sayHello();
+// person2.eat();
+
+
+// function Bike(make, model, year, color) {
+//    this.make = make;
+//    this.model = model;
+//    this.year = year;
+//    this.color = color;
+
+//    this.drive = function(){console.log(`You drive this ${this.model}`)}
+// }
+
+// const bike1 = new Bike("tvs", "apache", 2024, "red");
+// const bike2 = new Bike("yamaha", "fz", 2022, "black");
+// const bike3 = new Bike("honda", "activa", 2021, "silver");
+
+// console.log(bike1.make);
+// console.log(bike1.model);
+// console.log(bike1.year);
+// console.log(bike1.color);
+
+// console.log(bike2.make);
+// console.log(bike2.model);
+// console.log(bike2.year);
+// console.log(bike2.color);
+
+
+// console.log(bike3.make);
+// console.log(bike3.model);
+// console.log(bike3.year);
+// console.log(bike3.color);
+
+// bike1.drive();
+// bike2.drive();
+// bike3.drive();
+
+
+
+// class Product {
+
+//    constructor(name, price) {
+//     this.name = name;
+//     this.price = price;
+//    }
+
+//    displayProduct() {
+//     console.log(`Product: ${this.name}`);
+//     console.log(`Price: ₹${this.price.toFixed(2)}`);
+//    }
+
+//    salesTax(salesTax) {
+//        return this.price + (this.price * salesTax);
+//    }
+
+// }
+
+// const salesTax = 0.05;
+// // object creation or instance creation 
+// const product1 = new Product("mouse", 300);
+// const product2 = new Product("keyborad", 200.12);
+// const product3 = new Product("earphones", 320);
+
+// product1.displayProduct();
+// product2.displayProduct();
+// product3.displayProduct();
+
+// const total1 = product1.salesTax(salesTax);
+// const total2 = product2.salesTax(salesTax);
+// const total3 = product3.salesTax(salesTax);
+
+// console.log(`total prie with tax is ₹${total1.toFixed(2)}`);
+// console.log(`total prie with tax is ₹${total2.toFixed(2)}`);
+// console.log(`total prie with tax is ₹${total3.toFixed(2)}`);
+
+
+// class MathUtil {
+//     static PI = 3.14159;
+
+//     static getDiameter(radius) {
+//         return radius * 2;
+//     }
+
+//     static getCircumference(radius) {
+//         return 2 * this.MathUtil.PI * radius;
+//     }
+
+    
+
+// }
+
+
+// console.log(MathUtil.PI);
+// console.log(MathUtil.getDiameter(10));
+// console.log(MathUtil.getCircumference(20));
+
+
+//to check whether the amount is greater than 100 and apply a 10% discount.
+// class Shopping {
+//     constructor(amount) {
+//         this.amount = amount;
+//     }
+
+//     discount() {
+//         if (this.amount > 100) {
+//             let discount = this.amount * 10 / 100;
+//             let finalAmount = this.amount - discount;
+
+//             console.log("Discount:", discount);
+//             console.log("Final Amount:", finalAmount);
+//         } else {
+//             console.log("No discount");
+//             console.log("Final Amount:", this.amount);
+//         }
+//     }
+// }
+
+// const customer1 = new Shopping(200);
+// customer1.discount();
+
+//Find out the get area using static
+
+// class MathUtil {
+    
+//     static length=10;
+//     static breath=20;
+
+//     static getArea(length, breath) {
+//         return length * breath;
+//     }
+// }
+// console.log(MathUtil.getArea(MathUtil.length, MathUtil.breath));
+
+
+// class MathUtil {
+    
+
+//     static getArea(length, breath) {
+//         return length * breath;
+//     }
+// }
+// console.log(MathUtil.getArea(10,20));
