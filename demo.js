@@ -1566,3 +1566,173 @@
 //     }
 // }
 // console.log(MathUtil.getArea(10,20));
+
+
+//--------------------------------------------commit-21-------------------------------------------------
+
+
+
+
+
+// class User {
+
+//   static userCount = 0;
+
+//   constructor(username) {
+//      this.username = username;
+//      User.userCount++;
+//   }
+
+//   sayHello() {
+//     console.log(`Hello my username is ${this.username}`);
+//   }
+
+//   static getUserCount() {
+//     console.log(`There are ${User.userCount} users online`);
+//   }
+
+// }
+
+// const user1 = new User("Siva kumar");
+// const user2 = new User("Selva kumar");
+// const user3 = new User("ganesh");
+
+// user1.sayHello();
+// user2.sayHello();
+// user3.sayHello();
+// console.log(user1.username);
+// console.log(User.userCount);
+// User.getUserCount();
+
+
+
+//Write a JavaScript program using a class Student that stores the student name and maintains the total number of students using a static variable.
+
+// class student{
+
+//     static studentcount=0;
+//     constructor(stuname){
+//     this.stuname = stuname;
+//     student.studentcount++;
+// }
+
+
+// hihello(){
+//    console.log(`The student name is ${this.stuname} `);
+// }
+
+// static getstudentCount(){
+//     console.log(`The number of student is ${student.studentcount}`);
+// }
+// }
+
+// const student1 = new student("Siva kumar");
+// const student2 = new student("Selva kumar");
+// const student3 = new student("ganesh");
+
+// student1.hihello();
+// student2.hihello();
+// student3.hihello();
+// student.getstudentCount();
+
+
+
+
+// static calDicount() {
+
+// }
+
+// satic isValdiAccountNumber() {
+
+// class Animal {
+
+//   alive = true;
+
+//   eat() {
+//     console.log(`This ${this.name} is eating`);
+//   }
+
+//   sleep() {
+//     console.log(`This ${this.name} is sleeping`);
+//   }
+// }
+
+// class Rabbit extends Animal {
+//     name = "Indian Rabbit";
+//     run() {
+//         console.log(`This ${this.name} is running`);
+//     }
+// }
+
+// class Fish extends Animal {
+//    name = "Indian Shark";
+//     swim() {
+//         console.log(`This ${this.name} is swiming`);
+//     }
+// }
+
+// class Eagle extends Animal {
+//    name = "Eagle";
+//     fly() {
+//         console.log(`This ${this.name} is flying`);
+//     }
+// }
+
+// const rabbit = new Rabbit();
+// const fish = new Fish();
+// const eagle = new Eagle();
+
+// console.log(rabbit.alive);
+// rabbit.eat();
+// rabbit.sleep();
+// rabbit.run();
+
+// console.log(fish.alive);
+// fish.eat();
+// fish.sleep();
+// fish.swim();
+
+// console.log(eagle.alive);
+// eagle.eat();
+// eagle.sleep();
+// eagle.fly();
+
+class Animal {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+class Rabbit extends Animal {
+  constructor(name, age, runSpeed) {
+    super(name, age); // parent constructor
+    this.runSpeed = runSpeed;
+  }
+}
+
+class Fish extends Animal {
+  constructor(name, age, swimSpeed) {
+    super(name, age); // parent constructor
+    this.swimSpeed = swimSpeed;
+  }
+}
+
+class Eagle extends Animal {
+  constructor(name, age, flySpeed) {
+    super(name, age); // parent constructor
+    this.flySpeed = flySpeed;
+  }
+}
+
+const rabbit = new Rabbit("rabbit", 2, 25);
+const fish = new Fish("fish", 1, 10);
+const eagle = new Eagle("indian eagle", 3, 50);
+
+
+console.log(rabbit.name);
+console.log(rabbit.age);
+console.log(`the rabbit is runing at ${rabbit.runSpeed} kmp`);
+
+
+
