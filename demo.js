@@ -1697,42 +1697,724 @@
 // eagle.sleep();
 // eagle.fly();
 
-class Animal {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+// class Animal {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+
+// class Rabbit extends Animal {
+//   constructor(name, age, runSpeed) {
+//     super(name, age); // parent constructor
+//     this.runSpeed = runSpeed;
+//   }
+// }
+
+// class Fish extends Animal {
+//   constructor(name, age, swimSpeed) {
+//     super(name, age); // parent constructor
+//     this.swimSpeed = swimSpeed;
+//   }
+// }
+
+// class Eagle extends Animal {
+//   constructor(name, age, flySpeed) {
+//     super(name, age); // parent constructor
+//     this.flySpeed = flySpeed;
+//   }
+// }
+
+// const rabbit = new Rabbit("rabbit", 2, 25);
+// const fish = new Fish("fish", 1, 10);
+// const eagle = new Eagle("indian eagle", 3, 50);
+
+
+// console.log(rabbit.name);
+// console.log(rabbit.age);
+// console.log(`the rabbit is runing at ${rabbit.runSpeed} kmp`);
+
+//---------------------------------------commit-22------------------------------------
+
+
+// class Rectangle {
+
+//   constructor(width, height) {
+//      this.width = width;
+//      this.height = height;
+//   }
+
+//   set width(newWidth) {
+//      if(newWidth > 0) {
+//       this._width = newWidth;
+//      } else {
+//       console.error("Widht must be +ve number")
+//      }
+//   }
+//   set height(newHeight) {
+//      if(newHeight > 0) {
+//       this._height = newHeight;
+//      } else {
+//       console.error("Height must be +ve number")
+//      }
+//   }
+
+ 
+//    get width() {
+//     return this._width;
+//    }
+//    get height() {
+//     return this._height;
+//    }
+
+ 
+
+
+// }
+
+// const rectangle = new Rectangle(5, 11);
+
+
+// console.log(rectangle.height);
+// console.log(rectangle.width);
+
+// find the area to use setter and getter
+
+
+// class Area {
+
+//   constructor(length, breadth) {
+//      this.length = length;
+//      this.breadth = breadth;
+//   }
+
+//   set length(newLength) {
+//      if(newLength > 0) {
+//       this._length = newLength;
+//      } else {
+//       console.error("Length must be +ve number")
+//      }
+//   }
+//   set breadth(newBreadth) {
+//      if(newBreadth > 0) {
+//       this._breadth = newBreadth;
+//      } else {
+//       console.error("Breadth must be +ve number")
+//      }
+//   }
+
+ 
+//    get length() {
+//     return this._length;
+//    }
+//    get breadth() {
+//     return this._breadth;
+//    }
+
+
+// }
+
+// const area = new Area(5, 11);
+
+
+// console.log(area.length);
+// console.log(area.breadth);
+// console.log(area.length*area.breadth);
+
+
+
+
+// class Person{
+//   constructor(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName  = lastName;
+//     this.age = age;
+//   }
+
+
+//    set firstName(newFirstName) {
+//       if(typeof newFirstName === "string" && newFirstName.length > 0) {
+//         this._firstName = newFirstName;
+//       } else {
+//         console.error("FirstName must be a non emepty string");
+//       }
+//    }
+//    set lastName(newLastName) {
+//       if(typeof newLastName === "string" && newLastName.length > 0) {
+//         this._lastName = newLastName;
+//       } else {
+//         console.error("LastName must be a non emepty string");
+//       }
+//    }
+
+//    set age(newAge) {
+//     if(typeof newAge === "number" && newAge >= 0) {
+//       this._age = newAge;
+//     } else {
+//        console.error("age must be a non  -ve number");
+//     }
+//    }
+
+
+//   get firstName() {
+//     return this._firstName;
+//   }
+
+//   get lastName() {
+//     return this._lastName;
+//   }
+
+//   get fullName() {
+//     return this._firstName + " " + this._lastName;
+//   }
+   
+//   get age() {
+//     return this._age;
+//   }
+
+
+// }
+
+
+//  const person = new Person("siva", "kumar", 22);
+
+//  console.log(person.firstName);
+//  console.log(person.lastName);
+//  console.log(person.fullName);
+//  console.log(person.age);
+ 
+
+// swap the values of two variables 
+
+// let a = 1;
+// let b = 2;
+
+// console.log(a);
+// console.log(b);
+
+
+// [a,b] = [b,a];
+
+// console.log(a);
+// console.log(b);
+
+// swap 2 elements in an array 
+
+// const colors = ["red", "green", "black", "white"];
+
+// [colors[0], colors[3]] = [colors[3], colors[0]];
+
+// console.log(colors);
+
+
+
+// assign array elements to variable 
+
+// const colors = ["red", "green", "black", "white", "yellow"];
+
+// const [firstColor, secondColor, thirdColor, ...extraColors] = colors;
+
+// console.log(firstColor, secondColor, thirdColor, extraColors);
+
+// Extarct values from object 
+
+// const person1 = {
+//   firstName:"siva",
+//   lastName:"kumar",
+//   age: 22,
+//   job: "JS coder"
+
+// }
+// const person2 = {
+//   firstName:"ganes",
+//   lastName:"kumar",
+//   age: 21,
+//   job: "unemployed"
+
+// }
+
+
+// const {firstName, lastName, age, job} = person1;
+
+// console.log(firstName);
+// console.log(lastName);
+// console.log(age);
+// console.log(job);
+
+
+
+// destrututre in function parameters 
+
+
+// function displayPerson({firstName, lastName, age, job}) {
+//    console.log(`name: ${firstName} ${lastName}`);
+//    console.log(`age: ${age}`);
+//    console.log(`job: ${job}`);
+// }
+
+// const person1 = {
+//   firstName:"siva",
+//   lastName:"kumar",
+//   age: 22,
+//   job: "JS coder"
+
+// }
+// const person2 = {
+//   firstName:"ganes",
+//   lastName:"kumar",
+//   age: 21,
+//   job: "unemployed"
+
+// }
+
+// displayPerson(person2)
+
+//---------------------------------commit-23--------------------------------
+
+
+//  const person = {
+//   fullName: "Siva Kumar",
+//   age: 22,
+//   isStudent: true,
+//   hobbies: ["Football", "Singing", "cooking"],
+//   address: {
+//     street: "3rd cross, gandhi st",
+//     city: "chennai",
+//     state: "tamilnadu",
+//     country: "india",
+//   }
+// }
+
+// console.log(person.fullName);
+// console.log(person.age);
+// console.log(person.isStudent);
+// console.log(person.hobbies[2]);
+// console.log(person.address.street);
+// console.log(person.address.city);
+// console.log(person.address.state);
+// console.log(person.address.country);
+
+// for(const x in person.address) {
+//   console.log(person.address[x]);
+// }
+
+// class Person {
+//   constructor(name, age, ...address) {
+//     this.name = name;
+//     this.age = age;
+//     this.address = new Address(...address);
+//   }
+// }
+
+// class Address {
+
+//   constructor(street, city, state, country) {
+//     this.street = street;
+//     this.city = city;
+//     this.state = state;
+//     this.country = country;
+//   }
+// }
+
+// const person1 = new Person("siva", 22, "3rd gandhi st,",
+//                                        "chennai",
+//                                        "tamilnadu", "india");
+// const person2 = new Person("ganesh", 21, "4rd subash st,",
+//                                        "chennai",
+//                                        "karnataka", "india");
+// const person3 = new Person("ganesh", 20, "1rd kamraj st,",
+//                                        "madurai",
+//                                        "tamilnadu", "india");
+
+// console.log(person1.address.street);
+// console.log(person1.address.city);
+// console.log(person1.address.state);
+// console.log(person1.address.country);
+
+// console.log(person2.address.street);
+// console.log(person2.address.city);
+// console.log(person2.address.state);
+// console.log(person2.address.country);
+
+// console.log(person3.address.street);
+// console.log(person3.address.city);
+// console.log(person3.address.state);
+// console.log(person3.address.country);
+
+// const fruits = [{name: "apple", color: "red", calories: 85},
+//                 {name: "orange", color: "orange", calories: 90},
+//                 {name: "banana", color: "yellow", calories: 100},
+//                 {name: "cocunut", color: "white", calories: 105},
+//                 {name: "pineapple", color: "yellow", calories: 30}];
+
+// fruits.push({name: "grapes", color: "purple", calories: "22"})
+
+// console.log(fruits);
+
+// forEach
+// fruits.forEach(fruits => console.log(fruits.name));
+// fruits.forEach(fruits => console.log(fruits.colors));
+
+// // map
+
+// const fruitNames = fruits.map(fruit => fruit.name);
+
+// console.log(fruitNames);
+
+// // filter
+
+// const yellowFruits = fruits.filter(fruit => fruit.color === "yellow");
+
+// console.log(yellowFruits);
+
+// // reduce()
+
+// const maxFruit = fruits.reduce((accum, fruit) => fruit.calories > accum.calories ? fruit : accum);
+
+// console.log(maxFruit);
+
+//---------------------------------------------------------------------
+
+// function outer() {
+
+//     let message = "hello";
+
+//     function inner() {
+//         console.log(message);
+//     }
+
+//     inner();
+
+// }
+
+// message = "goobye";
+
+// outer();
+
+// function createCounter(){
+//   let count = 0;
+
+//   function increment() {
+//     count++;
+//     console.log(`count incresed to ${count}`);
+//   }
+
+//   function getCount() {
+//     return count;
+//   }
+
+//   return {increment, getCount};
+// }
+
+// const counter = createCounter();
+
+// console.log(createCounter);
+
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+
+// console.log(`the current count is ${counter.getCount()}`);
+
+// function createGame() {
+//   let score = 0;
+
+//   function increaseScore(runs) {
+//     score += runs;
+//     console.log(`${runs} runs`);
+//   }
+
+//   function decreaseScore(runs) {
+//     score -= runs;
+//     console.log(`${runs} runs`);
+//   }
+
+//   function getRun() {
+//     return score;
+//   }
+
+//   return{increaseScore, decreaseScore, getRun}
+
+// }
+
+// const game = createGame();
+
+// game.increaseScore(30);
+// game.increaseScore(20);
+// game.decreaseScore(10);
+// console.log(`the final scor is ${game.getRun()}runs`);
+
+
+
+
+// function sayHello() {
+//     window.alert("Hello");
+// }
+
+
+// // setTimeout(function(){window.alert("hello siva")}, 5000);
+// setTimeout(() => window.alert("hello siva kumar"), 2000);
+
+// import { PI, getCircumference, getArea, getVolume } from './mathUtil.js';
+
+// console.log(PI);
+
+
+// import { PI, getArea, getCircumfernce, getVolume,  } from './mathUtil.js';
+
+// console.log(PI);
+
+// const circumferenceRes = getCircumfernce(10);
+// console.log(circumferenceRes.toFixed(2));
+// const areaRes = getArea(10);
+// console.log(areaRes.toFixed(2));
+
+// const volumeRes = getVolume(10);
+// console.log(volumeRes.toFixed(2));
+
+// useEffect - react we will to handle async code
+// function func1(callback) {
+//   setTimeout(() => {
+//     console.log("Task 1");
+//     callback();
+//   }, 3000);
+// }
+
+// function func2() {
+//   console.log("task 2");
+//   console.log("task 3");
+//   console.log("task 4");
+// }
+
+// func1(func2);
+
+// try {
+//   console.log(x);
+//   // network errors
+//   // promise rejection
+//   // security errors
+// } catch (error) {
+//   console.error(error);
+// }
+// finally {
+//     // close files
+//     // close connection
+//     // relaeses the resoures
+//     console.log("This always executes");
+
+// }
+
+// console.log("You have reached the end of the code");
+
+// try {
+//   const dividend = window.prompt("Enter a divedend");
+//   const divisor = window.prompt("Enter a divisor");
+
+//   if (divisor == 0) {
+//     throw new Error("You can not divide by zero");
+//   } if(isNaN(dividend) || isNaN(divisor)) {
+//      throw new Error("Values must be a number");
+//   }
+
+//   const result = dividend / divisor;
+
+//   console.log(result);
+// } catch (error) {
+//   console.error(error);
+// }
+
+// console.log("we have reach the end");
+
+
+
+//--------------------------------------commit 17-09-2005----------------------
+
+
+
+// function task1(callback) {
+//   setTimeout(() => {
+//     console.log("Task 1 completed");
+//     callback();
+//   }, 3000);
+// }
+
+// function task2(callback) {
+//   setTimeout(() => {
+//     console.log("Task 2 completed");
+//     callback();
+//   }, 7000);
+// }
+
+// function task3(callback) {
+//   setTimeout(() => {
+//     console.log("Task 3 completed");
+//     callback();
+//   }, 1000);
+// }
+// function task4(value) {
+//   setTimeout(() => {
+//     console.log("Task 4 completed");
+//     value();
+//   }, 4000);
+// }
+
+// task1(() => {
+//     task2(() => {
+//         task3(() => {
+//             task4(() => {
+//                console.log("all tasks are completed");
+//             })
+//         })
+//     })
+// })
+
+// task1();
+// task2();
+// task3();
+// task4();
+// console.log("all tasks are completed");
+
+
+
+function brushUp() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const brushuped = true;
+      if (brushuped) {
+        resolve("brush up completed");
+      } else {
+        reject("brush up failed - 404");
+      }
+    }, 2000);
+  });
 }
 
-class Rabbit extends Animal {
-  constructor(name, age, runSpeed) {
-    super(name, age); // parent constructor
-    this.runSpeed = runSpeed;
-  }
+
+function walkDog() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const dogWalked = true;
+      if (dogWalked) {
+        resolve("walk dog completed");
+      } else {
+        reject("walk dog failed - 404");
+      }
+    }, 2000);
+  });
 }
 
-class Fish extends Animal {
-  constructor(name, age, swimSpeed) {
-    super(name, age); // parent constructor
-    this.swimSpeed = swimSpeed;
-  }
+
+function takeBath() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const takebathed = true;
+      if (takebathed) {
+        resolve("take bath completed");
+      } else {
+        reject("take bath failed - 404");
+      }
+    }, 2000);
+  });
 }
 
-class Eagle extends Animal {
-  constructor(name, age, flySpeed) {
-    super(name, age); // parent constructor
-    this.flySpeed = flySpeed;
-  }
+
+
+function cleanTheKitchen() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const kitchenCleaned = true;
+      if (kitchenCleaned) {
+        resolve("clean the kitchen completed");
+      } else {
+        reject("clean the kitchen failed");
+      }
+    }, 3500);
+  });
 }
 
-const rabbit = new Rabbit("rabbit", 2, 25);
-const fish = new Fish("fish", 1, 10);
-const eagle = new Eagle("indian eagle", 3, 50);
+function takeBreakfast(){
+  return new Promise((resolve, reject) => {
+    setTimeout(() =>{
+      const breakfasttaken = true;
+      if(breakfasttaken){
+        resolve("take breakfast completed");
+      }
+      else{
+        reject("take breakfast failed");
+      }
+    },2500);
+  });
+}
 
+function takeTheTrashOut() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const trashTakenOut = true;
+      if (trashTakenOut) {
+        resolve("take the trash out completed");
+      } else {
+        reject("take the trash out failed");
+      }
+    }, 1500);
+  });
+}
 
-console.log(rabbit.name);
-console.log(rabbit.age);
-console.log(`the rabbit is runing at ${rabbit.runSpeed} kmp`);
+function goToOffice(){
+  return new Promise((resolve, reject) =>{
+    setTimeout(() => {
+      const gotooffice = true;
+      if(gotooffice){
+        resolve("go to office compleled"); 
+      }
+      else{
+        reject("go to office failed");
+      }
+    },2000);
+  });
+}
+brushUp()
+ .then((value) => {
+    console.log(value);
+    return walkDog();
+  })
+   .then((value) => {
+    console.log(value);
+    return takeBath();
+  })
+  .then((value) => {
+    console.log(value);
+    return cleanTheKitchen();
+  })
+  .then((value) => {
+    console.log(value);
+    return takeBreakfast();
+  })
+  .then((value) => {
+    console.log(value);
+    return takeTheTrashOut();
+  })
+  .then((value) => {
+    console.log(value);
+    return goToOffice();
+  })
+  .then((value) => {
+    console.log(value);
+    console.log("all tasks are completed");
+  })
+    .catch((error) => {
+    console.error(error);
+  });
 
-
-
+// walkDog(() => {
+//     cleanTheKitchen(() => {
+//         takeTheTrashOut(() => {
+//             console.log("all tasks are completed");
+//         })
+//     })
+// })
